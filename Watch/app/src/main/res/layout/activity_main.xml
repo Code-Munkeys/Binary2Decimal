@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <FrameLayout
+        android:id="@+id/frmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:layout_boxedEdges="all">
+
+        <SeekBar
+            android:id="@+id/sekDecimalValue"
+            android:layout_width="149dp"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="25dp"
+            android:background="#01433D"
+            android:max="65535"
+            android:progress="0"
+            android:progressTint="#8BC34A" />
+
+        <ImageButton
+            android:id="@+id/btnBin2Dec"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|right"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#5F19DA"
+            android:src="@android:drawable/arrow_down_float"
+            android:textAlignment="gravity" />
+
+        <EditText
+            android:id="@+id/txtDecimalValue"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:background="#01433D"
+            android:digits="0,1,2,3,4,5,6,7,8,9"
+            android:ems="10"
+            android:focusable="auto"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:selectAllOnFocus="true"
+            android:text="@string/txtDecimalValue"
+            android:textAlignment="gravity"
+            android:textColor="#8BC34A"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/btnDec2Bin"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|left"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#5F19DA"
+            android:src="@android:drawable/arrow_up_float"
+            android:textAlignment="gravity" />
+
+        <EditText
+            android:id="@+id/txtBinaryValue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="45dp"
+            android:background="#01433D"
+            android:digits="0,1"
+            android:duplicateParentState="false"
+            android:ems="10"
+            android:focusable="auto"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="number"
+            android:maxLength="16"
+            android:selectAllOnFocus="true"
+            android:text="@string/txtBinaryValue"
+            android:textAlignment="gravity"
+            android:textColor="#8BC34A"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnCompare"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right|top"
+            android:backgroundTint="#5F19DA"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/btnCompareTitle"
+            android:textAlignment="gravity"
+            android:textColor="#E8E5ED"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|top|left"
+            android:backgroundTint="#5F19DA"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/btnGenerateTitle"
+            android:textAlignment="gravity"
+            android:textColor="#E8E5ED"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+</androidx.wear.widget.BoxInsetLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05201D"
+    tools:context=".ConvertFragment">
+
+    <ImageButton
+        android:id="@+id/btnBin2Dec"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#05201D"
+        android:src="@android:drawable/arrow_down_float"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintStart_toEndOf="@+id/txtDecimalValue"
+        app:layout_constraintTop_toBottomOf="@+id/txtBinaryValue"
+        app:tint="#4CAF50" />
+
+    <ImageButton
+        android:id="@+id/btnDec2Bin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#05201D"
+        android:src="@android:drawable/arrow_up_float"
+        app:layout_constraintEnd_toStartOf="@+id/txtDecimalValue"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBinaryValue"
+        app:tint="#579E5E" />
+
+    <Button
+        android:id="@+id/btnCompare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif"
+        android:text="COMPARE"
+        android:textColor="#E8E5ED"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sekDecimalValue" />
+
+    <SeekBar
+        android:id="@+id/sekDecimalValue"
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="25dp"
+        android:background="#01433D"
+        android:max="65535"
+        android:progress="0"
+        android:progressTint="#8BC34A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDecimalValue" />
+
+    <EditText
+        android:id="@+id/txtDecimalValue"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="#01433D"
+        android:digits="0,1,2,3,4,5,6,7,8,9"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:selectAllOnFocus="true"
+        android:text="@string/txtDecimalValue"
+        android:textAlignment="center"
+        android:textColor="#8BC34A"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBinaryValue" />
+
+    <EditText
+        android:id="@+id/txtBinaryValue"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="#01433D"
+        android:digits="0,1"
+        android:duplicateParentState="false"
+        android:editable="true"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="number"
+        android:maxLength="16"
+        android:selectAllOnFocus="true"
+        android:text="@string/txtBinaryValue"
+        android:textAlignment="center"
+        android:textColor="#8BC34A"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGenerate" />
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif"
+        android:text="GENERATE"
+        android:textColor="#E8E5ED"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/about"
+        android:textColor="#E8E5ED"
+        android:textSize="20sp"
+        app:cornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

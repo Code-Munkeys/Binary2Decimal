@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Binary 2 Decimal</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Convert</string>
+    <string name="second_fragment_label">About</string>
+    <string name="about">ABOUT</string>
+    <string name="convert">BACK TO CONVERT</string>
+    <string name="txtVersion">Version 1.0.0</string>
+    <string name="txtUrl"><a href="http://franz.ayestaran.co.uk">Developed by Franz Ayestaran</a></string>
+    <string name="btnCompareTitle">Compare</string>
+    <string name="btnGenerateTitle">Generate</string>
+    <string name="swhTimedTitle">Timed</string>
+    <string name="txtBinaryValue">0000000000000000</string>
+    <string name="txtDecimalValue">0</string>
+</resources>

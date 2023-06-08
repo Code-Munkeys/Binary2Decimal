@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Binary2Decimal</string>
+    <string name="txtBinaryValue">0000000000000000</string>
+    <string name="txtDecimalValue">0</string>
+    <string name="btnCompareTitle">COMP</string>
+    <string name="btnGenerateTitle">GEN</string>
+</resources>
